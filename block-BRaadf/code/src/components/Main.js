@@ -2,16 +2,21 @@ import Banner from "./Banner";
 import Cards from "./Cards";
 import Paragraph from "./Paragraph";
 import Title from "./Title";
+import { useContext } from "react";
 
-function Main({ isDarkMode }) {
+import { UserContext } from "../context/UserContex";
+
+
+function Main() {
+  let value = useContext(UserContext)
   return (
     <>
-      <Title text="Text Component" isDarkMode={isDarkMode} />
-      <Paragraph isDarkMode={isDarkMode} />
-      <Title text="Card Component" isDarkMode={isDarkMode} />
+      <Title text="Text Component" isDarkMode={value.isDarkMode} />
+      <Paragraph isDarkMode={value.isDarkMode} />
+      <Title text="Card Component" isDarkMode={value.isDarkMode} />
       <Cards />
-      <Title text="Banner Component" isDarkMode={isDarkMode} />
-      <Banner isDarkMode={isDarkMode} />
+      <Title text="Banner Component" isDarkMode={value.isDarkMode} />
+      <Banner isDarkMode={value.isDarkMode} />
     </>
   );
 }
