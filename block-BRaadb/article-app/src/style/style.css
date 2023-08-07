@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    background-color: #d1efef;
+}
+h3{
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* Aside */
+.aside{
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+}
+.aside-li{
+    font-size: 20px;
+    color: black;
+    
+}
+.margin{
+    display: flex;
+    /* margin-left: 30px; */
+    font-size: 24px;
+}
+
+/* article */
+.article{
+    background-color: #d1efef;
+}
+
+/* book */
+.card{
+    width: 250px;
+    margin-top: 20px;
+    
+
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width:80%;
+    padding: 20px;
+}
+.card-li{
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.h4{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+.h5{
+    font-size: 16px;
+}
+button{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.search{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: #d1efef;
+    border-radius: 10px;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name{
+    font-size: 12px;
+}
